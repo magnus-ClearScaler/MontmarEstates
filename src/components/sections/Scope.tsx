@@ -14,7 +14,7 @@ const youOrNot = [
 export function Scope() {
   return (
     <Section id="scope">
-      <SectionLabel marker="02">What we would do</SectionLabel>
+      <SectionLabel marker="01">What we would do</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         We would stick to one thing: paid acquisition.

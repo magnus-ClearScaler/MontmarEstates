@@ -5,24 +5,21 @@ const questions = [
   "What is your realistic forecast for the next 12 months?",
   "How many deals are in your pipeline right now?",
   "What is your average sale price and your typical commission percentage?",
-  "Can we confirm the focus band is €400k to €900k?",
-  "How fast can you turn around lead follow-up? This ties to our internal AI app for instant response.",
-  "What assets can you provide, and how quickly?",
 ];
 
 export function AlignQuestions() {
   return (
     <Section id="align" className="bg-soft">
-      <SectionLabel marker="05">A few things to figure out together</SectionLabel>
+      <SectionLabel marker="04">A few things to figure out together</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         Things we would want to understand before starting.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        None of this is us vetting you. It is just how we would build something
-        that actually fits. The better we understand the numbers, the better the
-        ads.
+        None of this is us vetting you. The answers help us build something that
+        fits, and they tell both of us fairly quickly whether this is a fit at
+        all.
       </p>
 
       <ol className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-2">

@@ -5,12 +5,11 @@ import { useReveal } from "../lib/useReveal";
 import { Wordmark } from "../components/Wordmark";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Hero } from "../components/sections/Hero";
-import { WhatWeHeard } from "../components/sections/WhatWeHeard";
 import { Scope } from "../components/sections/Scope";
 import { CommissionProblem } from "../components/sections/CommissionProblem";
 import { Options } from "../components/sections/Options";
 import { AlignQuestions } from "../components/sections/AlignQuestions";
-import { NextSteps } from "../components/sections/NextSteps";
+import { Footer } from "../components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Proposal,
@@ -33,12 +32,11 @@ function Proposal() {
       </header>
 
       <Hero />
-      <WhatWeHeard />
       <Scope />
       <CommissionProblem />
       <Options />
       <AlignQuestions />
-      <NextSteps />
+      <Footer />
     </main>
   );
 }

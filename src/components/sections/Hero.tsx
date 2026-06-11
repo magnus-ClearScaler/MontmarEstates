@@ -18,9 +18,9 @@ export function Hero() {
         </h1>
 
         <p className="reveal mt-8 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-          This is not a proposal. It is just how we would think about working
-          with Montmar, written plainly so you can see whether it lines up
-          before we sit down. If it does, we talk. If it does not, no harm done.
+          Not a proposal. Just how we would work with Montmar, laid out plainly
+          so you can see if it fits. We have already talked, so we will skip the
+          throat-clearing and get straight to it.
         </p>
 
         <div className="reveal mt-12 flex flex-col gap-2 font-mono text-xs uppercase tracking-[0.18em] text-muted sm:flex-row sm:items-center sm:gap-6">
