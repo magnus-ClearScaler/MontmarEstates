@@ -3,21 +3,23 @@ import { Section, SectionLabel } from "../Section";
 type Line = { label: string; value: string; emphasis?: boolean };
 
 const optionA: Line[] = [
-  { label: "Setup fee", value: "€1,500 to €2,000", emphasis: true },
+  { label: "Monthly retainer", value: "€500 to €1,000", emphasis: true },
+  { label: "Creatives", value: "10 every month", emphasis: true },
+  { label: "Commission", value: "10% of your gross commission on ALL sales closed while we work together, not only the ones traced back to an ad", emphasis: true },
+  { label: "Platform", value: "Meta: Facebook and Instagram" },
+  { label: "Setup fee", value: "€1,500 to €2,000, one time" },
   { label: "Covers", value: "Ad account audit, campaign architecture, qualification forms, creative setup" },
-  { label: "Monthly retainer", value: "€300 to €500", emphasis: true },
-  { label: "Covers", value: "Ongoing ad management and paid strategy" },
-  { label: "Commission", value: "10% of your gross commission on ALL deals closed during the engagement, not only ad-attributed ones", emphasis: true },
-  { label: "Minimum term", value: "3 months" },
-  { label: "Tail period", value: "90 days after the contract ends, so deals we started still count" },
+  { label: "Term", value: "Open-ended. Either side can cancel with 30 days notice" },
 ];
 
 const optionB: Line[] = [
-  { label: "Flat monthly retainer", value: "€900 to €1,500", emphasis: true },
-  { label: "Commission", value: "None. No upside share, no revenue share" },
-  { label: "Setup fee", value: "€1,500 to €2,000", emphasis: true },
+  { label: "Monthly retainer", value: "€1,000, flat", emphasis: true },
+  { label: "Creatives", value: "10 every month", emphasis: true },
+  { label: "Commission", value: "None. No upside share, nothing to track" },
+  { label: "Platform", value: "One platform: Meta" },
+  { label: "Setup fee", value: "€1,500 to €2,000, one time" },
   { label: "Covers", value: "Ad account audit, campaign architecture, qualification forms, creative setup" },
-  { label: "Minimum term", value: "3 months" },
+  { label: "Term", value: "Open-ended. Either side can cancel with 30 days notice" },
 ];
 
 function Card({
@@ -72,27 +74,40 @@ export function Options() {
         Whichever of these suits you better works for us.
       </h2>
 
+      <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+        Ten genuinely good creatives a month, for a brand at this level, is real
+        production work.{" "}
+        <span className="text-base-fg">
+          Around €750 a month is the floor just to make them properly.
+        </span>{" "}
+        Both options are built on top of that, not below it.
+      </p>
+
       <div className="mt-16 grid items-stretch gap-8 md:grid-cols-2">
         <Card
           tag="Option A"
-          title="Partnership model"
-          subtitle="Aligned incentives. Lower monthly cost, shared upside."
+          title="We back your growth"
+          subtitle="A lower monthly, and we share in the upside."
           lines={optionA}
-          framing="We win when you win. We are not chasing credit for individual ads. We are betting on Montmar's overall growth."
+          framing="The monthly is lower because we are betting on you, not just billing you. We win when you win. We are not chasing credit for individual ads, we are backing Montmar overall."
         />
         <Card
           tag="Option B"
-          title="Standard ad management"
-          subtitle="No commission. Clean and fully predictable."
+          title="A flat monthly"
+          subtitle="One fee. No commission, nothing to track."
           lines={optionB}
-          framing="A clean, predictable management fee. You pay for the service, we run the ads, no revenue share."
+          framing="Clean and predictable. You pay for the work, we run it, no revenue share. Simple."
         />
       </div>
 
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
-        Option A keeps our monthly cost low and ties our success to yours.
-        Option B is simpler and fully predictable.{" "}
-        <span className="text-base-fg">We are comfortable with either.</span>
+        Either one works for us. The single thing we will not do is take
+        commission only on the handful of sales we can "prove" came from an ad,
+        because we cannot honestly prove that.{" "}
+        <span className="text-base-fg">
+          These are the terms we stand behind. If they are not right for you,
+          that is completely fine.
+        </span>
       </p>
     </Section>
   );

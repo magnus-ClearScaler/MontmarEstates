@@ -59,6 +59,13 @@ export function CommissionProblem() {
             you to sign something that one-sided, and we would not sign it
             either.
           </p>
+          <p className="text-muted">
+            And we would be guessing anyway. We do not sit inside your sales
+            process. We do not see your viewings, your negotiations, how many
+            deals you close in a year, or which buyer first came from where.
+            Tying our pay to numbers we cannot see is not something either of us
+            should build on.
+          </p>
         </div>
 
         <div className="reveal rounded-2xl border border-line bg-card p-8">

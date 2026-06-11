@@ -1,12 +1,13 @@
 import { Section, SectionLabel } from "../Section";
 
 const we = [
-  "Build the ads and run the paid strategy on Meta, across Facebook and Instagram.",
+  "Build and run the paid strategy on Meta, across Facebook and Instagram.",
+  "Produce around 10 ad creatives a month from your footage. Good ones for a brand at this level take real time, and honestly that is most of the work.",
   "Set up in-depth qualification forms that filter for serious buyers. Quality over quantity.",
 ];
 
 const youOrNot = [
-  "You provide all creative assets: video and photography.",
+  "You provide the raw assets: video and photography. We cut them into the ads.",
   "We do not touch brand strategy or organic content. That stays yours.",
 ];
 
