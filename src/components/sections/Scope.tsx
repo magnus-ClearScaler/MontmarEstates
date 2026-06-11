@@ -1,0 +1,58 @@
+import { Section, SectionLabel } from "../Section";
+
+const we = [
+  "Build the ads and run the paid strategy on Meta, across Facebook and Instagram.",
+  "Set up in-depth qualification forms that filter for serious buyers. Quality over quantity.",
+];
+
+const youOrNot = [
+  "You provide all creative assets: video and photography.",
+  "We do not touch brand strategy or organic content. That stays yours.",
+];
+
+export function Scope() {
+  return (
+    <Section id="scope">
+      <SectionLabel marker="02">Our scope</SectionLabel>
+
+      <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+        We do one thing, and we do it well: paid acquisition.
+      </h2>
+
+      <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+        Precision here matters more than range. So expectations are clear from
+        day one, here is exactly where we operate and where we do not.
+      </p>
+
+      <div className="mt-16 grid gap-8 md:grid-cols-2">
+        <div className="reveal rounded-2xl border border-line bg-card p-8">
+          <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+            What we run
+          </div>
+          <ul className="mt-6 space-y-5">
+            {we.map((t) => (
+              <li key={t} className="flex gap-4">
+                <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span className="text-base leading-relaxed text-base-fg">{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="reveal rounded-2xl border border-line bg-card p-8">
+          <div className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
+            Where the line sits
+          </div>
+          <ul className="mt-6 space-y-5">
+            {youOrNot.map((t) => (
+              <li key={t} className="flex gap-4">
+                <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--fg-muted)]" />
+                <span className="text-base leading-relaxed text-base-fg">{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </Section>
+  );
+}

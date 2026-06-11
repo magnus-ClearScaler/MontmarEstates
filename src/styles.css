@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* Dark mode driven by a class on <html> rather than the OS preference. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+
+  /* Day mode */
+  --color-cream: #eceae4;
+  --color-ink: #1a1a18;
+  --color-red: #d30004;
+
+  /* Night mode */
+  --color-night: #100c08;
+  --color-coral: #fc7f48;
+}
+
+@layer base {
+  :root {
+    /* Semantic tokens, swapped by the .dark class below. */
+    --bg: var(--color-cream);
+    --bg-soft: #e3e0d8;
+    --fg: var(--color-ink);
+    --fg-muted: #5c5b56;
+    --line: #d3cfc5;
+    --accent: var(--color-red);
+    --card: #f3f1ec;
+  }
+
+  .dark {
+    --bg: var(--color-night);
+    --bg-soft: #1a1510;
+    --fg: #f6f4ef;
+    --fg-muted: #9a948c;
+    --line: #2c251d;
+    --accent: var(--color-coral);
+    --card: #181310;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  ::selection {
+    background-color: var(--accent);
+    color: var(--bg);
+  }
+}
+
+@utility bg-base {
+  background-color: var(--bg);
+}
+@utility bg-soft {
+  background-color: var(--bg-soft);
+}
+@utility bg-card {
+  background-color: var(--card);
+}
+@utility text-base-fg {
+  color: var(--fg);
+}
+@utility text-muted {
+  color: var(--fg-muted);
+}
+@utility text-accent {
+  color: var(--accent);
+}
+@utility bg-accent {
+  background-color: var(--accent);
+}
+@utility border-line {
+  border-color: var(--line);
+}
+
+/* Reveal-on-scroll. Elements start hidden, then animate when .is-visible
+   is toggled by the IntersectionObserver. */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
