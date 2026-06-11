@@ -68,7 +68,7 @@ function Card({
 export function Options() {
   return (
     <Section id="options">
-      <SectionLabel marker="03">Two ways we could do this</SectionLabel>
+      <SectionLabel marker="02">Two ways we could do this</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         Whichever of these suits you better works for us.

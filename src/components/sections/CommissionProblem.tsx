@@ -1,47 +1,19 @@
 import { Section, SectionLabel } from "../Section";
 
-const journey = [
-  { n: "01", t: "Sees a reel", s: "A scroll-stop on Instagram. No click, no form. Just a first impression." },
-  { n: "02", t: "Googles weeks later", s: "The name resurfaces. Now they research on their own terms." },
-  { n: "03", t: "Gets a referral", s: "A friend mentions you. Trust compounds outside any tracker." },
-  { n: "04", t: "Books a viewing", s: "In person, often arranged by phone or WhatsApp." },
-  { n: "05", t: "Closes months later", s: "A €600k decision is not an impulse. It takes time." },
-];
-
 export function CommissionProblem() {
   return (
     <Section id="the-problem" className="bg-soft">
-      <SectionLabel marker="02">Why commission only on ads does not work</SectionLabel>
+      <SectionLabel marker="01">Why commission only on ads does not work</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         A buyer spending €600k does not click an ad and check out.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        High-value property does not convert in a single session. The real path
-        looks more like this, and most of it is invisible to any ad platform.
+        A sale this size is a long series of touch points, not a clean line you
+        can track. Unlike a cheaper product or service, there is no single click
+        to point at and no straight path from ad to purchase.
       </p>
-
-      {/* Stepped buyer journey */}
-      <ol className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] md:grid-cols-5">
-        {journey.map((step, i) => (
-          <li key={step.n} className="reveal relative flex flex-col bg-card p-6">
-            <span className="font-mono text-xs tracking-[0.16em] text-accent">{step.n}</span>
-            <span className="mt-4 font-sans text-lg font-bold leading-snug tracking-tight">
-              {step.t}
-            </span>
-            <span className="mt-3 text-sm leading-relaxed text-muted">{step.s}</span>
-            {i < journey.length - 1 && (
-              <span
-                aria-hidden
-                className="absolute right-3 top-7 hidden font-mono text-muted md:block"
-              >
-                &rsaquo;
-              </span>
-            )}
-          </li>
-        ))}
-      </ol>
 
       {/* The argument */}
       <div className="mt-16 grid gap-8 md:grid-cols-2">
