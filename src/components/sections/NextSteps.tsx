@@ -1,29 +1,32 @@
 import { Section, SectionLabel } from "../Section";
 import { Wordmark } from "../Wordmark";
 
-const steps = [
-  { n: "01", t: "We meet Tuesday", s: "We walk through this together and choose a direction." },
-  { n: "02", t: "We align", s: "Once we agree on a model, we move to a short written agreement." },
-  { n: "03", t: "We begin", s: "Account setup, qualification forms, and the first campaigns go live." },
-];
-
 export function NextSteps() {
   return (
     <Section id="next-steps">
-      <SectionLabel marker="06">Next steps</SectionLabel>
+      <SectionLabel marker="06">If this lines up</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        Three steps from here to live.
+        There is no big process from here.
       </h2>
 
-      <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-3">
-        {steps.map((step) => (
-          <div key={step.n} className="reveal bg-card p-8">
-            <span className="font-mono text-xs tracking-[0.16em] text-accent">{step.n}</span>
-            <h3 className="mt-4 font-sans text-xl font-bold tracking-tight">{step.t}</h3>
-            <p className="mt-3 text-base leading-relaxed text-muted">{step.s}</p>
-          </div>
-        ))}
+      <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+        If the shape of this makes sense to you, the rest is a conversation, not
+        a pitch. We would put the details into a short written agreement so we
+        are both covered, and then start. No long onboarding, no theatre.
+      </p>
+
+      <div className="reveal mt-12 rounded-2xl border border-line bg-card p-8 sm:p-10">
+        <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+          The one real question
+        </div>
+        <p className="mt-5 max-w-2xl font-sans text-2xl font-bold leading-snug tracking-tight sm:text-3xl">
+          When would you want to start?
+        </p>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          Tell us that and whether the €400k to €900k focus still holds, and we
+          can take it from there. Everything else we sort out together.
+        </p>
       </div>
 
       <footer className="reveal mt-24 flex flex-col items-start justify-between gap-8 border-t border-line pt-10 sm:flex-row sm:items-center">
@@ -32,7 +35,7 @@ export function NextSteps() {
           <a href="mailto:magnus@clearscaler.com" className="transition-colors hover:text-accent">
             magnus@clearscaler.com
           </a>
-          <span>Prepared for Montmar Estates, June 2026</span>
+          <span>For Montmar Estates, June 2026</span>
         </div>
       </footer>
     </Section>

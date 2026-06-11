@@ -11,7 +11,7 @@ const journey = [
 export function CommissionProblem() {
   return (
     <Section id="the-problem" className="bg-soft">
-      <SectionLabel marker="03">The honest problem with commission-only-on-ads</SectionLabel>
+      <SectionLabel marker="03">Why commission only on ads does not work</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         A buyer spending €600k does not click an ad and check out.
@@ -49,20 +49,21 @@ export function CommissionProblem() {
           <p>
             There is{" "}
             <span className="font-semibold text-accent">no honest way</span> to
-            prove a specific sale came from a specific ad. The signal is real;
-            the attribution is not.
+            prove a specific sale came from a specific ad. The signal is real.
+            The attribution is not.
           </p>
           <p className="text-muted">
-            So a model where we are paid only for sales we can "prove" came from
-            ads punishes us for real work that genuinely contributed but cannot
-            be tracked. We take all the risk. You take all the upside. No serious
-            partner accepts that.
+            So paying us only for sales we can "prove" came from ads would
+            punish us for real work that helped but cannot be tracked. We would
+            carry all the risk while you keep all the upside. We would not ask
+            you to sign something that one-sided, and we would not sign it
+            either.
           </p>
         </div>
 
         <div className="reveal rounded-2xl border border-line bg-card p-8">
           <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
-            Which leaves two fair structures
+            Which leaves two ways that feel fair
           </div>
           <ul className="mt-6 space-y-6">
             <li className="flex gap-4">
@@ -81,7 +82,7 @@ export function CommissionProblem() {
             </li>
           </ul>
           <p className="mt-6 text-sm leading-relaxed text-muted">
-            Both are laid out below. We are genuinely comfortable with either.
+            Both are below. We are genuinely happy with either one.
           </p>
         </div>
       </div>

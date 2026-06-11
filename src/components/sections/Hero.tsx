@@ -12,20 +12,19 @@ export function Hero() {
         </div>
 
         <h1 className="reveal mt-14 max-w-4xl font-sans text-[2.6rem] font-extrabold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl">
-          We do not pitch you.
+          What we had
           <br />
-          We bet on you.
+          in mind.
         </h1>
 
         <p className="reveal mt-8 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-          Most agencies sell you leads and disappear. We would rather tie our
-          outcome to yours. One discipline, done properly, with our incentives
-          pointed the same way as yours.
+          This is not a proposal. It is just how we would think about working
+          with Montmar, written plainly so you can see whether it lines up
+          before we sit down. If it does, we talk. If it does not, no harm done.
         </p>
 
-        <div className="reveal mt-12 flex flex-col gap-3 font-mono text-xs uppercase tracking-[0.18em] text-muted sm:flex-row sm:items-center sm:gap-6">
-          <span>An overview prepared for Montmar Estates</span>
-          <span className="hidden h-px w-8 bg-[var(--line)] sm:block" />
+        <div className="reveal mt-12 flex flex-col gap-2 font-mono text-xs uppercase tracking-[0.18em] text-muted sm:flex-row sm:items-center sm:gap-6">
+          <span>For Montmar Estates</span>
           <span className="text-accent">June 2026</span>
         </div>
       </div>

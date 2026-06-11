@@ -26,7 +26,6 @@ export function SectionLabel({ marker, children }: { marker: string; children: R
   return (
     <div className="reveal mb-8 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.18em] text-muted">
       <span className="text-accent">{marker}</span>
-      <span className="h-px w-8 bg-[var(--line)]" />
       <span>{children}</span>
     </div>
   );

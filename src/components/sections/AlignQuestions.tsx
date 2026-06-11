@@ -13,15 +13,16 @@ const questions = [
 export function AlignQuestions() {
   return (
     <Section id="align" className="bg-soft">
-      <SectionLabel marker="05">Questions we want to align on</SectionLabel>
+      <SectionLabel marker="05">A few things to figure out together</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        A few things to work through together before we commit.
+        Things we would want to understand before starting.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        This is not vetting. It is how we build the right strategy with you. The
-        sharper the inputs, the better the campaign.
+        None of this is us vetting you. It is just how we would build something
+        that actually fits. The better we understand the numbers, the better the
+        ads.
       </p>
 
       <ol className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-2">

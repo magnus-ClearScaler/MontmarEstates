@@ -13,15 +13,15 @@ const youOrNot = [
 export function Scope() {
   return (
     <Section id="scope">
-      <SectionLabel marker="02">Our scope</SectionLabel>
+      <SectionLabel marker="02">What we would do</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        We do one thing, and we do it well: paid acquisition.
+        We would stick to one thing: paid acquisition.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        Precision here matters more than range. So expectations are clear from
-        day one, here is exactly where we operate and where we do not.
+        We would rather be clear up front about where we help and where we do
+        not, so nobody is guessing later. Here is the line as we see it.
       </p>
 
       <div className="mt-16 grid gap-8 md:grid-cols-2">

@@ -18,10 +18,10 @@ const points = [
 export function WhatWeHeard() {
   return (
     <Section id="what-we-heard" className="bg-soft">
-      <SectionLabel marker="01">What we heard</SectionLabel>
+      <SectionLabel marker="01">What we took away</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        Before anything else, here is your situation as we understand it.
+        First, here is what we picked up from talking to you.
       </h2>
 
       <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-3">
