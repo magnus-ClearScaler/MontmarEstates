@@ -46,22 +46,6 @@ export function WhyUs() {
           </div>
         ))}
       </div>
-
-      {/* Featured: the internal AI app we are building */}
-      <div className="reveal mt-8 rounded-2xl border border-line bg-card p-8 sm:p-10">
-        <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
-          An edge we are building
-        </div>
-        <h3 className="mt-4 max-w-2xl font-sans text-2xl font-bold leading-snug tracking-tight sm:text-3xl">
-          An internal AI app, so you always answer first.
-        </h3>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-          Voice-activated property search and email drafting, straight from your
-          phone. Say "find west-facing properties in South Bay" and reply to a
-          client the moment they ask, while slower agents are still typing. In
-          this market, the first serious response usually wins.
-        </p>
-      </div>
     </Section>
   );
 }
