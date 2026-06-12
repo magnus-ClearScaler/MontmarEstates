@@ -10,7 +10,7 @@ const questions = [
 export function AlignQuestions() {
   return (
     <Section id="align" className="bg-soft">
-      <SectionLabel marker="03">A few things to figure out together</SectionLabel>
+      <SectionLabel marker="06">A few things to figure out together</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         Things we would want to understand before starting.

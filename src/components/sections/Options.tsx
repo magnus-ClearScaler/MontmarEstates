@@ -68,7 +68,7 @@ function Card({
 export function Options() {
   return (
     <Section id="options">
-      <SectionLabel marker="02">Two ways we could do this</SectionLabel>
+      <SectionLabel marker="05">Two ways we could do this</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         Whichever of these suits you better works for us.
@@ -78,7 +78,8 @@ export function Options() {
         Ten genuinely good creatives a month, for a brand at this level, is real
         production work.{" "}
         <span className="text-base-fg">
-          That sits at the core of both options.
+          The quality you want takes real, ongoing time to produce, which is why
+          both options carry a monthly retainer.
         </span>{" "}
         The only real difference is how the rest is structured.
       </p>

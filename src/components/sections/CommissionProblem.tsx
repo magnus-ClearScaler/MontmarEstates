@@ -3,7 +3,7 @@ import { Section, SectionLabel } from "../Section";
 export function CommissionProblem() {
   return (
     <Section id="the-problem" className="bg-soft">
-      <SectionLabel marker="01">Why commission only on ads does not work</SectionLabel>
+      <SectionLabel marker="04">Why commission only on ads does not work</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         A buyer spending €600k does not click an ad and check out.

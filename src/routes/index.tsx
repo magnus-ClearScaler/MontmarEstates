@@ -5,6 +5,9 @@ import { useReveal } from "../lib/useReveal";
 import { Wordmark } from "../components/Wordmark";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Hero } from "../components/sections/Hero";
+import { Vision } from "../components/sections/Vision";
+import { Audience } from "../components/sections/Audience";
+import { WhyUs } from "../components/sections/WhyUs";
 import { CommissionProblem } from "../components/sections/CommissionProblem";
 import { Options } from "../components/sections/Options";
 import { AlignQuestions } from "../components/sections/AlignQuestions";
@@ -31,6 +34,9 @@ function Proposal() {
       </header>
 
       <Hero />
+      <Vision />
+      <Audience />
+      <WhyUs />
       <CommissionProblem />
       <Options />
       <AlignQuestions />
