@@ -13,7 +13,7 @@ const optionA: Line[] = [
 ];
 
 const optionB: Line[] = [
-  { label: "Monthly retainer", value: "€750, flat", emphasis: true },
+  { label: "Monthly retainer", value: "€850, flat", emphasis: true },
   { label: "Creatives", value: "10 every month", emphasis: true },
   { label: "Commission", value: "None. No upside share, nothing to track" },
   { label: "Platform", value: "One platform: Meta" },
