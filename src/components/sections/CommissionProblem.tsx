@@ -1,76 +1,50 @@
 import { Section, SectionLabel } from "../Section";
 
+const points = [
+  {
+    k: "We need to get paid",
+    t: "We still have to be paid for the work we actually do. That is true of any partner worth keeping.",
+  },
+  {
+    k: "Not on what we cannot control",
+    t: "Your pipeline, your timing, your sales process: we control none of it. Tying our pay to it is a big risk for us to carry.",
+  },
+  {
+    k: "One ad never closes it",
+    t: "A purchase this size needs many touch points. Paid ads are a real part of that, never the single click that seals the deal.",
+  },
+];
+
 export function CommissionProblem() {
   return (
     <Section id="the-problem" className="bg-soft">
       <SectionLabel marker="04">Why commission only on ads does not work</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        A buyer spending €600k does not click an ad and check out.
+        We get it. You have been burned before.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        A sale this size is a long series of touch points, not a clean line you
-        can track. Unlike a cheaper product or service, there is no single click
-        to point at and no straight path from ad to purchase.
+        So here is exactly how we think about getting paid. No games.
       </p>
 
-      {/* The argument */}
-      <div className="mt-16 grid gap-8 md:grid-cols-2">
-        <div className="reveal space-y-6 text-lg leading-relaxed">
-          <p>
-            A purchase this size is never one click. It is a long string of
-            touch points over weeks or months: a reel, a search, a referral, a
-            viewing, then a slow decision. The chance someone{" "}
-            <span className="font-semibold text-accent">
-              buys straight off an ad
-            </span>{" "}
-            is close to zero.
-          </p>
-          <p className="text-muted">
-            So commission paid only on the sales we can pin to an ad does not
-            match how any of this works. We also do not see or control that
-            process. Your viewings, your calls, your negotiations, how many deals
-            you close in a year: none of it is visible to us. Tying our pay to
-            something we can neither see nor control does not make sense from our
-            end.
-          </p>
-          <p className="text-muted">
-            What does make sense: we will happily take a smaller monthly in
-            exchange for commission. But then it has to be on{" "}
-            <span className="font-semibold text-base-fg">
-              every deal you close while we work together
-            </span>
-            , not only the ones traced to ad traffic. At 5% to 10% on all of it,
-            dropping the retainer is worth it for us.
-          </p>
-        </div>
-
-        <div className="reveal rounded-2xl border border-line bg-card p-8">
-          <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
-            Which leaves two ways that feel fair
+      <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-3">
+        {points.map((p) => (
+          <div key={p.k} className="reveal bg-card p-8">
+            <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+              {p.k}
+            </div>
+            <p className="mt-5 text-base leading-relaxed text-base-fg">{p.t}</p>
           </div>
-          <ul className="mt-6 space-y-6">
-            <li className="flex gap-4">
-              <span className="font-mono text-sm text-accent">A</span>
-              <span className="leading-relaxed">
-                A lower monthly, plus 5% to 10% of your commission on every deal
-                closed while we work together.
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="font-mono text-sm text-accent">B</span>
-              <span className="leading-relaxed">
-                A clean monthly fee for the work we do. No commission, nothing to
-                track.
-              </span>
-            </li>
-          </ul>
-          <p className="mt-6 text-sm leading-relaxed text-muted">
-            Both are below. We are genuinely happy with either one.
-          </p>
-        </div>
+        ))}
       </div>
+
+      <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
+        So commission paid only on sales traced to an ad does not add up.{" "}
+        <span className="text-base-fg">
+          Which leaves two ways that actually feel fair, both below.
+        </span>
+      </p>
     </Section>
   );
 }
