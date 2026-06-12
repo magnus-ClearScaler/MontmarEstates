@@ -12,6 +12,12 @@ export function Footer() {
           >
             magnus@clearscaler.com
           </a>
+          <a
+            href="mailto:kian@clearscaler.com"
+            className="transition-colors hover:text-accent"
+          >
+            kian@clearscaler.com
+          </a>
           <span>For Montmar Estates, June 2026</span>
         </div>
       </div>
