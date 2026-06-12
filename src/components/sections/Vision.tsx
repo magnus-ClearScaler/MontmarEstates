@@ -3,7 +3,7 @@ import { Section, SectionLabel } from "../Section";
 const pillars = [
   {
     k: "Positioning",
-    t: "Quiet luxury, in the spirit of Aman. Space, restraint, and taste. The brand should feel like the life it sells, not a listings feed.",
+    t: "Quiet luxury, inspired by Aman Group. Space, restraint, and taste. The brand should feel like the life it sells, not a listings feed.",
   },
   {
     k: "Content",
