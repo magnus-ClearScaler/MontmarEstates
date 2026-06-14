@@ -40,9 +40,10 @@ export function CommissionProblem() {
       </div>
 
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
-        So commission paid only on sales traced to an ad does not add up.{" "}
+        So we do not tie our pay to your closings at all.{" "}
         <span className="text-base-fg">
-          Which leaves two ways that actually feel fair, both below.
+          Instead, two clean ways below: one flat monthly fee, or a lower base
+          plus pay for the qualified viewings we can actually book and prove.
         </span>
       </p>
     </Section>

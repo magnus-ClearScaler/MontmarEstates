@@ -3,9 +3,9 @@ import { Section, SectionLabel } from "../Section";
 type Line = { label: string; value: string; emphasis?: boolean };
 
 const optionA: Line[] = [
-  { label: "Monthly retainer", value: "€500", emphasis: true },
+  { label: "Monthly retainer", value: "€850, flat", emphasis: true },
   { label: "Creatives", value: "10 every month", emphasis: true },
-  { label: "Commission", value: "5% to 10% of your gross commission on every deal closed while we work together, not only the ones traced back to an ad", emphasis: true },
+  { label: "Performance fee", value: "None. One predictable number, nothing to count" },
   { label: "Platform", value: "Meta: Facebook and Instagram" },
   { label: "Setup fee", value: "€1,000, one time" },
   { label: "Covers", value: "Ad account audit, campaign architecture, qualification forms, creative setup" },
@@ -13,12 +13,12 @@ const optionA: Line[] = [
 ];
 
 const optionB: Line[] = [
-  { label: "Monthly retainer", value: "€850, flat", emphasis: true },
+  { label: "Base retainer", value: "€500 a month", emphasis: true },
   { label: "Creatives", value: "10 every month", emphasis: true },
-  { label: "Commission", value: "None. No upside share, nothing to track" },
-  { label: "Platform", value: "One platform: Meta" },
+  { label: "Performance fee", value: "€150 per qualified viewing booked through our campaigns", emphasis: true },
+  { label: "Measured on", value: "Booked viewings only, never closings we cannot see" },
+  { label: "Platform", value: "Meta: Facebook and Instagram" },
   { label: "Setup fee", value: "€1,000, one time" },
-  { label: "Covers", value: "Ad account audit, campaign architecture, qualification forms, creative setup" },
   { label: "Term", value: "Open-ended. Either side can cancel with 30 days notice" },
 ];
 
@@ -28,16 +28,29 @@ function Card({
   subtitle,
   lines,
   framing,
+  recommended,
 }: {
   tag: string;
   title: string;
   subtitle: string;
   lines: Line[];
   framing: string;
+  recommended?: boolean;
 }) {
   return (
-    <div className="reveal flex h-full flex-col rounded-2xl border border-line bg-card p-8 sm:p-10">
-      <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">{tag}</div>
+    <div
+      className={`reveal flex h-full flex-col rounded-2xl bg-card p-8 sm:p-10 ${
+        recommended ? "border-2 border-[var(--accent)]" : "border border-line"
+      }`}
+    >
+      <div className="flex items-center justify-between gap-3">
+        <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">{tag}</div>
+        {recommended && (
+          <div className="rounded-full bg-accent px-3 py-1 font-mono text-[0.65rem] uppercase tracking-[0.14em] text-[var(--bg)]">
+            What we would pick
+          </div>
+        )}
+      </div>
       <h3 className="mt-4 font-sans text-2xl font-bold tracking-tight sm:text-3xl">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-muted">{subtitle}</p>
 
@@ -81,30 +94,31 @@ export function Options() {
           The quality you want takes real, ongoing time to produce, which is why
           both options carry a monthly retainer.
         </span>{" "}
-        The only real difference is how the rest is structured.
+        Neither is tied to commission on your sales. The only difference is how
+        the rest is structured.
       </p>
 
       <div className="mt-16 grid items-stretch gap-8 md:grid-cols-2">
         <Card
           tag="Option A"
-          title="We back your growth"
-          subtitle="A lower monthly, and we share in the upside."
+          title="One clean monthly"
+          subtitle="A single flat fee. Predictable, nothing to count."
           lines={optionA}
-          framing="The monthly is lower because we are betting on you, not just billing you. We win when you win. We are not chasing credit for individual ads, we are backing Montmar overall."
+          framing="Honestly, this is the one we would pick. You pay one number, we run everything, and nobody is tallying results at month end. Simple and calm, which suits the brand."
+          recommended
         />
         <Card
           tag="Option B"
-          title="A flat monthly"
-          subtitle="One fee. No commission, nothing to track."
+          title="Pay for results we can prove"
+          subtitle="A lower base, plus a fee per qualified viewing we book."
           lines={optionB}
-          framing="Clean and predictable. You pay for the work, we run it, no revenue share. Simple."
+          framing="You pay less up front and more only when we put serious, qualified buyers in front of you. We are measured on booked viewings, which we can both see, never on closings we cannot."
         />
       </div>
 
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
-        Either one works for us. The single thing we will not do is take
-        commission only on the handful of sales we can "prove" came from an ad,
-        because we cannot honestly prove that.{" "}
+        Either one works for us. The single thing we will not do is tie our pay
+        to closings we cannot see or control.{" "}
         <span className="text-base-fg">
           These are the terms we stand behind. If they are not right for you,
           that is completely fine.
