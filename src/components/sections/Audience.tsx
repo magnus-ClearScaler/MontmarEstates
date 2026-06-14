@@ -10,8 +10,8 @@ export function Audience() {
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        We point the spend at the people who actually close, in the{" "}
-        <span className="text-accent">€400k to €900k</span> band where the real
+        We focus spend on buyers who actually close, in the{" "}
+        <span className="text-accent">€400k to €900k</span> band where the
         demand sits.
       </p>
 
@@ -24,7 +24,7 @@ export function Audience() {
             The mobile new money
           </h3>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Younger, internationally mobile, earning out of the Gulf and the US:
+            Younger, internationally mobile money from the Gulf and the US:
             Dubai, the Emirates, Miami. Entrepreneurs and digital nomads who can
             buy now and want design, lifestyle, and a base in Europe.
           </p>
@@ -38,10 +38,10 @@ export function Audience() {
             The northern European mover
           </h3>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Established buyers from northern and western Europe with strong
-            finances. A retirement home, or a long-planned place in the south of
-            Spain. Patient, discerning, and slow to trust, which is exactly why
-            the brand has to feel right.
+            Established northern and western European buyers with strong
+            finances. A retirement or long-planned home in southern Spain.
+            Patient, discerning, slow to trust, which is why the brand has to
+            feel right.
           </p>
         </div>
       </div>

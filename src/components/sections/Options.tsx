@@ -94,27 +94,25 @@ export function Options() {
       <SectionLabel marker="05">Two ways we could do this</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        Whichever of these suits you better works for us.
+        Two structures. Either works for us.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        Ten genuinely good creatives a month, for a brand at this level, is real
-        production work.{" "}
+        Ten high-quality creatives a month is real, ongoing production work,
+        which is why both options carry a monthly retainer.{" "}
         <span className="text-base-fg">
-          The quality you want takes real, ongoing time to produce, which is why
-          both options carry a monthly retainer.
+          Neither is tied to commission on your sales.
         </span>{" "}
-        Neither is tied to commission on your sales. The only difference is how
-        the rest is structured.
+        The only difference is how the rest is structured.
       </p>
 
       <div className="mt-16 grid items-stretch gap-8 md:grid-cols-2">
         <Card
           tag="Option A"
           title="One clean monthly"
-          subtitle="A single flat fee. Predictable, nothing to count."
+          subtitle="One flat fee. Predictable, nothing to count."
           lines={optionA}
-          framing="Honestly, this is the one we would pick. You pay one number, we run everything, and nobody is tallying results at month end. Simple and calm, which suits the brand."
+          framing="The one we would pick. One number, everything included, nothing to count. Simple and predictable, which suits the brand."
           recommended
         />
         <Card
@@ -122,8 +120,20 @@ export function Options() {
           title="Pay for results we can prove"
           subtitle="A lower base, plus a fee per qualified lead we bring in."
           lines={optionB}
-          framing="You pay less up front and more only when we actually deliver serious, qualified buyers. We are measured on qualified leads, the part of the funnel we genuinely control and can prove, never on closings we cannot."
+          framing="You pay less up front, and more only when we deliver qualified buyers. We are measured on the part of the funnel we control and can prove, never on closings we cannot."
         />
+      </div>
+
+      {/* Ad spend is separate from our fees and applies to both options */}
+      <div className="reveal mt-8 rounded-2xl border border-line bg-card px-8 py-6 sm:px-10">
+        <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+          Ad budget, separate from our fees
+        </div>
+        <p className="mt-3 text-base leading-relaxed text-base-fg">
+          Plan on €500 to €1,000 a month in Meta ad spend to start, paid
+          directly to the platform. We scale it up gradually as the data and
+          results come in.
+        </p>
       </div>
 
       {/* Airtight definition so the metric is never a judgment call */}
@@ -132,8 +142,8 @@ export function Options() {
           What counts as a qualified lead, for Option B
         </div>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-          A lead counts only when every one of these is true, so the number is
-          never a judgment call at the end of the month.
+          A lead counts only when all of these are true, so the count is never a
+          judgment call.
         </p>
         <ul className="mt-7 grid gap-x-10 gap-y-4 sm:grid-cols-2">
           {criteria.map((c) => (
@@ -164,11 +174,11 @@ export function Options() {
       </div>
 
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
-        Either one works for us. The single thing we will not do is tie our pay
-        to closings we cannot see or control.{" "}
+        Either works for us. The one thing we will not do is tie our pay to
+        closings we cannot control.{" "}
         <span className="text-base-fg">
-          These are the terms we stand behind. If they are not right for you,
-          that is completely fine.
+          These are the terms we stand behind, and we are comfortable either
+          way.
         </span>
       </p>
     </Section>

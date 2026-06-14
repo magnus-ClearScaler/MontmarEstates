@@ -2,16 +2,16 @@ import { Section, SectionLabel } from "../Section";
 
 const points = [
   {
-    k: "We need to get paid",
-    t: "We still have to be paid for the work we actually do. That is true of any partner worth keeping.",
+    k: "We are paid for our work",
+    t: "We are paid for the work we do. That holds for any serious partner.",
   },
   {
-    k: "Not on what we cannot control",
-    t: "Your pipeline, your timing, your sales process: we control none of it. Tying our pay to it is a big risk for us to carry.",
+    k: "Not for what we cannot control",
+    t: "Your pipeline, timing, and sales process are yours, not ours. Tying our pay to them puts the risk in the wrong place.",
   },
   {
     k: "One ad never closes it",
-    t: "A purchase this size needs many touch points. Paid ads are a real part of that, never the single click that seals the deal.",
+    t: "A purchase this size takes many touch points. Paid ads are one important part, never the click that closes it.",
   },
 ];
 
@@ -21,11 +21,11 @@ export function CommissionProblem() {
       <SectionLabel marker="04">Why commission only on ads does not work</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        We get it. You have been burned before.
+        You have been burned before. We understand why.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        So here is exactly how we think about getting paid. No games.
+        So here is how we think about getting paid.
       </p>
 
       <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-3">
@@ -40,10 +40,10 @@ export function CommissionProblem() {
       </div>
 
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
-        So we do not tie our pay to your closings at all.{" "}
+        So we do not tie our pay to your closings.{" "}
         <span className="text-base-fg">
-          Instead, two clean ways below: one flat monthly fee, or a lower base
-          plus pay for the qualified leads we actually bring in and can prove.
+          Two clean structures below: a flat monthly fee, or a lower base plus a
+          fee per qualified lead we bring in.
         </span>
       </p>
     </Section>

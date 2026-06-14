@@ -3,27 +3,27 @@ import { Section, SectionLabel } from "../Section";
 const reasons = [
   {
     k: "Inside the Gulf market",
-    t: "We have worked within this industry in the Emirates, where many of these buyers already live and spend.",
+    t: "We have worked in this industry in the Emirates, where many of these buyers live and spend.",
   },
   {
     k: "Fluent in tech and AI",
-    t: "Staying ahead of the tech and AI sector is core to our business, not a buzzword we bolt on afterwards.",
+    t: "Tech and AI are core to how we work, not a buzzword we add on afterwards.",
   },
   {
     k: "On the ground in Spain",
-    t: "We are based in Spain. We see the demand building across Costa del Sol, and the country more broadly, first-hand.",
+    t: "We are based in Spain and see the demand building across Costa del Sol first-hand.",
   },
   {
     k: "We read the macro",
-    t: "We track the geopolitics that move this kind of money. When the Gulf feels less certain, capital looks for calmer, safer ground, and southern Spain is high on that list.",
+    t: "We track the geopolitics that move this money. When the Gulf feels less certain, capital moves to calmer ground, and southern Spain is high on the list.",
   },
   {
     k: "Nordic ourselves",
-    t: "We share the background of many of your northern European buyers. We know how they think and what earns their trust.",
+    t: "Same background as many of your northern European buyers. We know what earns their trust.",
   },
   {
     k: "Young and forward-thinking",
-    t: "We are close to where marketing, technology, and this audience are actually heading, not where they were five years ago.",
+    t: "Close to where marketing, technology, and this audience are heading, not where they were.",
   },
 ];
 

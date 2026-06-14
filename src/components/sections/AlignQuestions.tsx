@@ -17,9 +17,8 @@ export function AlignQuestions() {
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        None of this is us vetting you. The answers help us build something that
-        fits, and they tell both of us fairly quickly whether this is a fit at
-        all.
+        Not a vetting exercise. The answers shape the strategy and tell both of
+        us quickly whether this is a fit.
       </p>
 
       <ol className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-2">
