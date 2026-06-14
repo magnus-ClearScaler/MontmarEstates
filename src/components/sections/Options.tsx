@@ -23,6 +23,15 @@ const optionB: Line[] = [
   { label: "Term", value: "Open-ended. Either side can cancel with 30 days notice" },
 ];
 
+const criteria = [
+  "Arrives through one of our campaigns, tracked to our ads.",
+  "States a budget of €400k or above, inside the target band.",
+  "Plans to buy within the next 12 months.",
+  "Has financing in place: cash, or a mortgage agreed in principle.",
+  "Gives real, reachable contact details and genuine buying intent.",
+  "Is an actual prospective buyer, not an agent, tester, or duplicate.",
+];
+
 function Card({
   tag,
   title,
@@ -115,6 +124,43 @@ export function Options() {
           lines={optionB}
           framing="You pay less up front and more only when we actually deliver serious, qualified buyers. We are measured on qualified leads, the part of the funnel we genuinely control and can prove, never on closings we cannot."
         />
+      </div>
+
+      {/* Airtight definition so the metric is never a judgment call */}
+      <div className="reveal mt-8 rounded-2xl border border-line bg-card p-8 sm:p-10">
+        <div className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+          What counts as a qualified lead, for Option B
+        </div>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          A lead counts only when every one of these is true, so the number is
+          never a judgment call at the end of the month.
+        </p>
+        <ul className="mt-7 grid gap-x-10 gap-y-4 sm:grid-cols-2">
+          {criteria.map((c) => (
+            <li key={c} className="flex gap-3">
+              <svg
+                aria-hidden
+                className="mt-1 shrink-0 text-accent"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              <span className="text-base leading-relaxed text-base-fg">{c}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-7 border-t border-line pt-6 text-sm leading-relaxed text-muted">
+          Does not count: duplicates, fake or unreachable details, budgets below
+          the band, browsers with no timeline, or industry and competitor
+          entries.
+        </p>
       </div>
 
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
