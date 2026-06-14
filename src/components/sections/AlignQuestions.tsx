@@ -4,7 +4,7 @@ const questions = [
   "How many deals have you closed in the last 12 months?",
   "What is your realistic forecast for the next 12 months?",
   "How many deals are in your pipeline right now?",
-  "What is your average sale price and your typical commission percentage?",
+  "What is your average sale price, and how many enquiries do you see in a typical month?",
 ];
 
 export function AlignQuestions() {

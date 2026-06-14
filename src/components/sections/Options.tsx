@@ -15,8 +15,9 @@ const optionA: Line[] = [
 const optionB: Line[] = [
   { label: "Base retainer", value: "€500 a month", emphasis: true },
   { label: "Creatives", value: "10 every month", emphasis: true },
-  { label: "Performance fee", value: "€150 per qualified viewing booked through our campaigns", emphasis: true },
-  { label: "Measured on", value: "Booked viewings only, never closings we cannot see" },
+  { label: "Performance fee", value: "€100 per qualified lead from our campaigns", emphasis: true },
+  { label: "Qualified means", value: "Passed our qualification form: in the €400k to €900k band, real budget, genuine intent" },
+  { label: "Measured on", value: "Qualified leads only, the part of the funnel we control, never closings we cannot" },
   { label: "Platform", value: "Meta: Facebook and Instagram" },
   { label: "Setup fee", value: "€1,000, one time" },
   { label: "Term", value: "Open-ended. Either side can cancel with 30 days notice" },
@@ -110,9 +111,9 @@ export function Options() {
         <Card
           tag="Option B"
           title="Pay for results we can prove"
-          subtitle="A lower base, plus a fee per qualified viewing we book."
+          subtitle="A lower base, plus a fee per qualified lead we bring in."
           lines={optionB}
-          framing="You pay less up front and more only when we put serious, qualified buyers in front of you. We are measured on booked viewings, which we can both see, never on closings we cannot."
+          framing="You pay less up front and more only when we actually deliver serious, qualified buyers. We are measured on qualified leads, the part of the funnel we genuinely control and can prove, never on closings we cannot."
         />
       </div>
 

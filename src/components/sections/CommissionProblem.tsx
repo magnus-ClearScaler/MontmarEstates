@@ -43,7 +43,7 @@ export function CommissionProblem() {
         So we do not tie our pay to your closings at all.{" "}
         <span className="text-base-fg">
           Instead, two clean ways below: one flat monthly fee, or a lower base
-          plus pay for the qualified viewings we can actually book and prove.
+          plus pay for the qualified leads we actually bring in and can prove.
         </span>
       </p>
     </Section>
