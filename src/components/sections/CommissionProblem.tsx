@@ -43,8 +43,7 @@ export function CommissionProblem() {
         So we do not tie our pay to your closings.{" "}
         <span className="text-base-fg">
           We charge for the work we do and the qualified leads we can actually
-          prove, never a cut of sales we cannot see. The numbers are
-          straightforward, and best walked through together.
+          prove, never a cut of sales we cannot see.
         </span>
       </p>
     </Section>
