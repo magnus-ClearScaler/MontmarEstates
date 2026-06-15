@@ -15,7 +15,7 @@ const optionA: Line[] = [
 const optionB: Line[] = [
   { label: "Base retainer", value: "€500 a month", emphasis: true },
   { label: "Creatives", value: "10 every month", emphasis: true },
-  { label: "Performance fee", value: "€100 per qualified lead from our campaigns", emphasis: true },
+  { label: "Performance fee", value: "€50 per qualified lead from our campaigns", emphasis: true },
   { label: "Qualified means", value: "Passed our qualification form: in the €400k to €900k band, real budget, genuine intent" },
   { label: "Measured on", value: "Qualified leads only, the part of the funnel we control, never closings we cannot" },
   { label: "Platform", value: "Meta: Facebook and Instagram" },
