@@ -29,8 +29,8 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <Section id="why-us">
-      <SectionLabel marker="03">Why we are a good fit</SectionLabel>
+    <Section id="why-us" className="bg-soft">
+      <SectionLabel marker="04">Why we are a good fit</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         Why we are the right team for this.

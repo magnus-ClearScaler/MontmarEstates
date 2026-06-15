@@ -17,8 +17,8 @@ const points = [
 
 export function CommissionProblem() {
   return (
-    <Section id="the-problem" className="bg-soft">
-      <SectionLabel marker="04">Why commission only on ads does not work</SectionLabel>
+    <Section id="the-problem">
+      <SectionLabel marker="05">Why commission only on ads does not work</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         You have been burned before. We understand why.

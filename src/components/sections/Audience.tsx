@@ -2,8 +2,8 @@ import { Section, SectionLabel } from "../Section";
 
 export function Audience() {
   return (
-    <Section id="audience" className="bg-soft">
-      <SectionLabel marker="02">Who we target</SectionLabel>
+    <Section id="audience">
+      <SectionLabel marker="03">Who we target</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
         Two kinds of buyer. Both serious.

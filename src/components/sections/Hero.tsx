@@ -19,7 +19,7 @@ export function Hero() {
 
         <p className="reveal mt-8 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
           A summary of what we discussed, what we think makes sense for Montmar,
-          and an overview of what it would cost. Our thinking, not a formal
+          and a thought on what it will cost. Our thinking, not a formal
           proposal.
         </p>
 

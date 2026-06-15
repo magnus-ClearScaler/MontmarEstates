@@ -6,6 +6,7 @@ import { Wordmark } from "../components/Wordmark";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Hero } from "../components/sections/Hero";
 import { Vision } from "../components/sections/Vision";
+import { Benchmark } from "../components/sections/Benchmark";
 import { Audience } from "../components/sections/Audience";
 import { WhyUs } from "../components/sections/WhyUs";
 import { CommissionProblem } from "../components/sections/CommissionProblem";
@@ -33,6 +34,7 @@ function Proposal() {
 
       <Hero />
       <Vision />
+      <Benchmark />
       <Audience />
       <WhyUs />
       <CommissionProblem />
