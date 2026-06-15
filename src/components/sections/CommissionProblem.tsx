@@ -42,8 +42,9 @@ export function CommissionProblem() {
       <p className="reveal mx-auto mt-12 max-w-3xl text-center text-base leading-relaxed text-muted">
         So we do not tie our pay to your closings.{" "}
         <span className="text-base-fg">
-          Two clean structures below: a flat monthly fee, or a lower base plus a
-          fee per qualified lead we bring in.
+          We charge for the work we do and the qualified leads we can actually
+          prove, never a cut of sales we cannot see. The numbers are
+          straightforward, and best walked through together.
         </span>
       </p>
     </Section>

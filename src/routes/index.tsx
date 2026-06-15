@@ -9,7 +9,6 @@ import { Vision } from "../components/sections/Vision";
 import { Audience } from "../components/sections/Audience";
 import { WhyUs } from "../components/sections/WhyUs";
 import { CommissionProblem } from "../components/sections/CommissionProblem";
-import { Options } from "../components/sections/Options";
 import { Footer } from "../components/Footer";
 
 export const Route = createFileRoute("/")({
@@ -37,7 +36,6 @@ function Proposal() {
       <Audience />
       <WhyUs />
       <CommissionProblem />
-      <Options />
       <Footer />
     </main>
   );
