@@ -18,15 +18,15 @@ const findings = [
 export function Benchmark() {
   return (
     <Section id="benchmark" className="bg-soft">
-      <SectionLabel marker="02">What this level takes</SectionLabel>
+      <SectionLabel marker="02">How Aman markets</SectionLabel>
 
       <h2 className="reveal max-w-3xl font-sans text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        We studied how Aman markets. That is the bar.
+        We looked at Aman's ads. That is the level.
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        We looked at how Aman Group and brands at that tier present themselves.
-        It is a useful benchmark for where Montmar should sit.
+        Properly edited, genuinely luxurious, and clearly a lot of work to
+        produce. That is exactly the direction Montmar should take its brand.
       </p>
 
       <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-[var(--line)] sm:grid-cols-3">
