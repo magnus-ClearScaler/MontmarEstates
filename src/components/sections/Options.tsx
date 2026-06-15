@@ -4,7 +4,7 @@ type Line = { label: string; value: string; emphasis?: boolean };
 
 const optionA: Line[] = [
   { label: "Monthly retainer", value: "€850, flat", emphasis: true },
-  { label: "Creatives", value: "10 every month", emphasis: true },
+  { label: "Creatives", value: "5 every month", emphasis: true },
   { label: "Performance fee", value: "None. One predictable number, nothing to count" },
   { label: "Platform", value: "Meta: Facebook and Instagram" },
   { label: "Setup fee", value: "€1,000, one time" },
@@ -14,7 +14,7 @@ const optionA: Line[] = [
 
 const optionB: Line[] = [
   { label: "Base retainer", value: "€500 a month", emphasis: true },
-  { label: "Creatives", value: "10 every month", emphasis: true },
+  { label: "Creatives", value: "5 every month", emphasis: true },
   { label: "Performance fee", value: "€50 per qualified lead from our campaigns", emphasis: true },
   { label: "Qualified means", value: "Passed our qualification form: in the €400k to €900k band, real budget, genuine intent" },
   { label: "Measured on", value: "Qualified leads only, the part of the funnel we control, never closings we cannot" },
@@ -98,8 +98,8 @@ export function Options() {
       </h2>
 
       <p className="reveal mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-        Ten high-quality creatives a month is real, ongoing production work,
-        which is why both options carry a monthly retainer.{" "}
+        Five high-quality creatives a month. At this level they take real time
+        to produce well, which is why both options carry a monthly retainer.{" "}
         <span className="text-base-fg">
           Neither is tied to commission on your sales.
         </span>{" "}
